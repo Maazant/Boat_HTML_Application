@@ -1,0 +1,395 @@
+/*
+****************************************************
+Fichier style css
+****************************************************
+*/
+
+/*****************Fonts*****************************/
+
+@font-face {
+    font-family: 'Baloo_Regular';
+    src: url('../web_fonts/Baloo-Regular.ttf');
+}
+
+#jacket_main_page
+{
+    width: 375px;
+    height: 667px;
+}
+
+#jacket_bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+body
+{
+    background: url("../img/jacket_fond.png") repeat;
+}
+
+#jacket_banniere
+{   
+    background-color: #003F91;
+    border: 3px solid #94FFD2;
+    text-align : center; 
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 375px;
+    height: auto;
+    box-shadow: 6px 6px 0px #94FFD2 ; /*(décalage vertical, et horizontal de l'ombre, son niveau d'adoucissement, et sa couleur).*/
+    padding: 12px; /* Marge intérieure de 12px */
+    overflow: auto; 
+    word-wrap: break-word; /*Couper les texte trop larges à utiliser pour les formulaire*/
+    display: flex; /*change alignement axe secondaire*/
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+
+}
+
+/*Fex-box*/
+
+/* le centrage vertical et horizontal*/
+
+.jacket_element:nth-child(1) /* On prend le 1er bloc élément */
+{
+    margin: auto;
+    background-color: #27A5B7;
+    flex:2;
+    border: 3px solid transparent;
+    border-radius: 30px;
+    font-family: 'Baloo_Regular';
+    font-style:normal;
+    color:white;
+}
+
+
+.jacket_element:nth-child(2) /* On prend le deuxième bloc élément */
+{
+    margin: auto;
+    flex:2;
+}
+.jacket_element:nth-child(3) /* On prend le 3eme bloc élément */
+{
+    margin: auto;
+    background-color: #27A5B7;
+    flex:2;
+    border: 3px solid transparent;
+    border-radius: 100px;
+}
+.jacket_element:nth-child(4) 
+{
+    margin: auto;
+    background-color: #27A5B7;
+    flex:2;
+    border: 3px solid transparent;
+    border-radius: 100px;
+}
+/*****************Icone********************/
+#jacket_temperature,#jacket_sos, #jacket_boussole, #jacket_logo, #jacket_meteo
+{
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-left: 8px;
+    height: 50px;
+    width: 50px;
+}
+
+#jacket_mike
+{
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-left: 8px;
+    height: 100px;
+    width: 100px;
+}
+
+#jacket_button_sos, #jacket_button_save_mike
+{
+    background-color: #27A5B7;
+    border: 3px solid transparent;
+    border-radius: 30px;
+}
+
+#jacket_temperature_text
+{
+    font-family: 'Baloo_Regular';
+    font-style:normal;
+    color:white;
+}
+
+*{
+    box-sizing:border-box
+  }
+  #jacket_menu_dynamique ul {
+        font-family: 'Baloo_Regular';
+        font-style:normal;
+        color:white;
+        width:125px;
+        list-style:none;
+        float:right;
+        background-color: #003F91;
+        border: 3px solid #94FFD2;
+        text-align : center; 
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        box-shadow: 0px 6px 0px #94FFD2 ; /*(décalage vertical, et horizontal de l'ombre, son niveau d'adoucissement, et sa couleur).*/
+        padding: 12px; /* Marge intérieure de 12px */
+        overflow: auto; 
+        margin-top: 0px;
+        height: 320px;
+      
+  }
+  
+  #jacket_menu_dynamique img {
+        background-color: #27A5B7;
+        flex:2;
+        border: 3px solid transparent;
+        border-radius: 100px;
+        width: 75px;
+        height: 75px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+  }
+  
+  #jacket_menu_dynamique ul li:hover {
+      background: #54B6A8;
+      -moz-transition: all .8s; 
+      -webkit-transition: all .8s; 
+      -o-transition: all .8s; 
+      transition: all .8s;
+  }
+  
+#jacket_section{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#jacket_article
+{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#jacket_heatmap
+{
+    flex:3;
+    border:5px solid transparent;
+    border-radius: 100px;
+    width: 230px;
+}
+
+#jacket_heatmap_title
+{
+    font-family: 'Baloo_Regular';
+    font-style: bold;
+    color:white;
+    background-color: #003F91;
+    border: 3px solid #94FFD2;
+    text-align : center; 
+    border-radius: 30px;
+    margin-left: 20px;
+    width: 200px;
+
+}
+
+#jacket_slider, #jacket_filter_first_line, #jacket_filter_second_line
+{   
+    text-align : center; 
+    width: 225px;
+    overflow: auto;  /*Couper les texte trop larges à utiliser pour les formulaire*/
+    display: flex; /*change alignement axe secondaire*/
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    font-family: 'Baloo_Regular';
+    font-style: bold;
+    color:black;
+
+}
+
+.jacket_element2:nth-child(1) 
+{
+    margin: auto;
+    height: 25px;
+    background-color: #06EAF6;
+    flex:1;
+    border: 3px solid black;
+}
+.jacket_element2:nth-child(2) 
+{
+    margin: auto;
+    height: 25px;
+    background-color: #2AC31D;
+    flex:1;
+    border: 3px solid black;
+}
+.jacket_element2:nth-child(3) 
+{
+    margin: auto;
+    height: 25px;
+    background-color: #FDF501;
+    flex:1;
+    border: 3px solid black;
+}
+.jacket_element2:nth-child(4) 
+{
+    margin: auto;
+    height: 25px;
+    background-color: #FFB501;
+    flex:1;
+    border: 3px solid black;
+}
+.jacket_element2:nth-child(5) 
+{
+    margin: auto;
+    height: 25px;
+    background-color: #FF0D02;
+    flex:1;
+    border: 3px solid black;
+}
+
+#jacket_filter
+{
+    font-family: 'Baloo_Regular';
+    font-style: bold;
+    color:white;
+    background-color: #003F91;
+    border: 3px solid #94FFD2;
+    text-align : center; 
+    border-radius: 30px;
+    height: 100px;
+    width: 250px;
+    margin-top: 8px;
+    padding: 12px;
+}
+
+.jacket_filter_first_line:nth-child(1)
+{
+    margin: auto;
+    height: 25px;
+    background-color: #2AC31D;
+    flex:1;
+    border: 4px solid lightgray;
+    border-radius: 100px;
+    margin-top: 5px;
+}
+
+.jacket_filter_first_line:nth-child(2), .jacket_filter_first_line:nth-child(4)
+{
+    margin-top: 10px;
+    height: 25px;
+    background-color: #003F91;
+    flex:2;
+}
+
+.jacket_filter_first_line:nth-child(3)
+{
+    margin-top: 5px;
+    height: 25px;
+    background-color: #FDF501;
+    flex:1;
+    border: 4px solid lightgray;
+    border-radius: 100px;
+}
+
+.jacket_filter_second_line:nth-child(1)
+{
+    margin-top: 10px;
+    height: 25px;
+    background-color: #FFB501;
+    flex:1;
+    border: 4px solid lightgray;
+    border-radius: 100px;
+}
+
+.jacket_filter_second_line:nth-child(2), .jacket_filter_second_line:nth-child(4)
+{
+    margin-top: 10px;
+    height: 25px;
+    background-color: #003F91;
+    flex:2;
+}
+
+.jacket_filter_second_line:nth-child(3)
+{
+    margin-top: 10px;
+    height: 25px;
+    background-color: #FF0D02;
+    flex:1;
+    border: 4px solid lightgray;
+    border-radius: 100px;
+}
+
+#jacket_popup
+{
+    background-color: #A6F1A6;
+    font-family: 'Baloo_Regular';
+    font-style: bold;
+    color:black;
+    border: 3px solid #106010;
+    text-align : center; 
+    border-radius: 30px;
+    width: 225px;
+    height: 490px;
+    margin-top: 20px;
+    padding: 12px;
+}
+
+.jacket_call_element:nth-child(1)
+{
+    margin: auto;
+    border: 3px solid #106010;
+    border-radius: 30px;
+    flex: 2;
+}
+
+.jacket_call_element:nth-child(2)
+{
+    margin-top:20px;
+    flex :2;
+}
+
+.jacket_call_element:nth-child(3)
+{
+    margin-top: 10px;
+    flex :1;
+}
+.jacket_call_element:nth-child(4)
+{
+    margin-top: 10px;
+    flex :1;
+}
+
+.jacket_call_element:nth-child(5)
+{
+    margin-top: 10px;
+    flex :1;
+}
+.jacket_call_element:nth-child(6)
+{
+    margin-top: 10px;
+    flex :1;
+}
+.jacket_call_element:nth-child(7)
+{
+    margin-top: 10px;
+    flex :1;
+}
+
+#jacket_send_sos, #jacket_stop_recording, #jacket_play_button, #jacket_download_button
+{
+    background-color: #358600;
+    font-family: 'Baloo_Regular';
+    font-style: bold;
+    color:rgba(233, 232, 232, 0.952);
+    width: 120px;
+    height: 50px;
+    border: 3px solid #106010;
+    border-radius: 30px;
+}

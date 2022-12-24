@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Zen Dots", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+/* BANNIERE POUR TOUT LE MONDE */
+#page {
+    display: flex;
+}
+
+#info-container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(1, 1, 123);
+    border: 5px solid;
+    border-color: rgb(3, 72, 211);
+    color :rgba(255, 255, 255, 0.902);
+    width: 100vw;
+    height: 20vh;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+#logo {
+    width: 10vw;
+    margin: auto;
+    padding-left: 10px;
+}
+
+#titre {
+    width: 16vw;
+    padding: auto;
+    font-size: 15px;
+    margin: auto;
+}
+
+#four_items {
+    display: flex;
+    flex-direction: row;
+    width: 32vw;
+    margin-top: 1.5vh;
+}
+
+#item {
+    display: flex;
+    align-items: center;
+}
+
+#buttons {
+    width: 8vw;
+    margin: auto;
+    transition: 0.3s;
+}
+
+#buttons:hover {
+    transform:scale(1.1);
+}
+
+#time_block {
+    width: 5vw;
+    height: 5vh;
+    padding: 0 0;
+    background-color: #27A5B7;
+    border: 3px solid #072c32;
+    border-top: 0px transparent;
+    border-right: 0px transparent;
+    color:rgba(255, 255, 255, 0.95);
+}
+
+#time {
+    margin: 1vh 0vw;
+    font-size: 15px;
+}
+
+/* Menu de gauche avec détails énergétiques */
+#left_menu {
+    background-color: rgb(1, 1, 123);
+    border: 5px solid;
+    border-color: rgb(3, 72, 211);
+    border-top: 0px;
+    color :rgba(255, 255, 255, 0.902);
+    height: 80vh;
+    width: 18vw;
+    margin-left: 0px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+#left_menu_title {
+    font-size: 12px;
+    padding-left: 20px;
+    transition: 0.3s;
+}
+
+#left_menu_title li {
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+#left_menu_title li:hover {
+    transform:scale(1.1);
+}
+
+/* Informations relatives à l'équipement énergétique choisi à gauche
+Ce sont les seules informations qui changent lors du chargement d'une nouvelle page */
+#specific_information {
+    width:85vw;
+    margin-top: 10px;
+    margin-left: 30px;
+    display: flex;
+}
+
+#title_menu {
+    display: flex;
+    align-items:baseline;
+}
+
+#titre_page {
+    margin-left:5vw;
+    width:25vw;
+    font-size: 25px;
+}
+
+/*création du menu déroulant / dropdown*/
+.dropdown {
+    color: rgb(0, 0, 0);
+    width:5vw;
+    margin-left:10vw;
+    height: 2vw;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dropdown * {
+    box-sizing: border-box;
+}
+
+.select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #2a2f3b solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+    width:5vw;
+    font-size: 10px;
+}
+
+.select-clicked {
+    border: 2px #0101c8 solid;
+    box-shadow: 0 0 0.8em 12ff23;
+}
+
+.select:hover{
+    background: #fff;
+}
+
+.caret {
+    width:0;
+    height:0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.caret-rotate {
+    transform: rotate(180deg);
+}
+
+.menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #01017b;
+    border: 1px #000000 solid;
+    box-shadow: 0 0.5em  1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #e1e0e4;
+    position: absolute;
+    top: 1.5em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu li {
+    padding:0.5em 1em;
+    margin: 0.2em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.menu li:hover {
+    background: #0101c8;
+}
+
+.active {
+    background: #010196;
+}
+
+.menu-open {
+    display: block;
+    opacity: 0.95;
+}
+/* fin du menu déroulant */
+
+#graphique {
+    padding-left: 25px;
+}
+
+#comparaisons {
+    margin-top: 20vh;
+    padding:0vh 3vw 0 3vw ;    /*top right bottom left*/
+}

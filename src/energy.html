@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Energy Information</title>
+        <link rel="stylesheet" href="../styles/style_energy.css" />
+        <script src = "../js/energy.js" type="module" defer></script>
+    </head>
+    <body>
+        <div id="info-container">
+            <div id="logo">
+                <img src="../icons/logo.ico" alt="logo" width="100"/>
+            </div>
+            <div id="titre">
+                <h1>Energie</h1>
+            </div>
+            <div id="four_items">
+                <div id="deux_premiers">
+                    <div id="item">
+                        <img src="../img/temperature_icon.png" alt="temperature" height="39" width=40/>
+                        <p id="text_items">14°C</p>
+                    </div>
+                    <div id="item">
+                        <img src="../img/weather_icon.png" alt="weather" height="39" width=40/>
+                        <p id="text_items">Nuageux  </p>
+                    </div>
+                </div>
+                <div id="les deux autres">
+                    <div id="item">
+                        <img src="../img/geolocalisation_icon.png" alt="geolocalisation" height="39" width=40/>
+                        <p id="text_items">47.6510,-3.1723</p>
+                    </div>
+                    <div id="item">
+                        <img src="../img/battery_icon.png" alt="battery" height="39" width=40/>
+                        <p id="text_items">237 W/h</p>
+                    </div>
+                </div>
+            </div>
+            <div id="buttons">
+                <a href="../index.html"><img src="../img/main_button.png" alt="home button" width="85"/></a>
+            </div>
+            <div id="buttons">
+                <a href="map.html"><img src="../img/map_button.png" alt="map button" width="85"/></a>
+            </div>
+            <div id="buttons">
+                <a href="jacket.html"><img src="../img/jacket_button.png" alt="jacket button" width="85"/></a>
+            </div>
+            <div id="buttons">
+                <a href="energy.html"><img src="../img/energy_button.png" alt="energy button" width="85"/></a>
+            </div>
+            <div id="time_block">
+                <p id="time"></p>
+            </div>
+        </div> 
+        <!-- le code pour ma page -->
+        <div id="page">
+            <div id="left_menu">
+                <h4>Batterie</h4>
+                <ul id="left_menu_title">
+                    <li>Charge</li>
+                </ul>
+                <h4>Production</h4>
+                <h5>Panneaux solaires :</h5>
+                <ul id="left_menu_title">
+                    <li>Toit babord</li>
+                    <li>Toit tribord</li>
+                    <li>Poupe babord</li>
+                    <li>Poupe tribord</li>
+                </ul>
+                <ul id="left_menu_title">
+                    <li>Hydrogenerateur</li>
+                    <li>Eolienne</li>
+                </ul>
+                <h4>Consommation</h4>
+                <ul id="left_menu_title">
+                    <li>BEC</li>
+                    <li>Centrale de navigation</li>
+                    <li>GPS</li>
+                    <li>Pilote automatique</li>
+                    <li>VHF</li>
+                </ul>
+            </div>
+            <div id="specific_information">
+                <div id="img_title_menu">
+                    <div id="title_menu">
+                        <h3 id="titre_page">Hydrogenerateur</h3>
+                        <!-- création du menu déroulant / dropdown menu -->
+                        <div class="dropdown">
+                            <div class="select">
+                                <span class="selected">6h</span>
+                                <div class="caret"></div>
+                            </div>
+                            <ul class="menu">
+                                <li class="active">6h</li>
+                                <li>5j</li>
+                                <li>1m</li>
+                                <li>YTD</li>
+                                <li>MAX</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img src="../img/graphs/Hydrogenerateur_6h.jpg" id="graphique" alt="Graphique" width="600"/>
+                </div>
+                <div id="comparaisons">
+                    <h4><u>Comparaison par rapport aux performances habituelles</u></h4>
+                    <ul>
+                        <li>En baisse de 15% sur la dernière année</li>
+                        <li>Durée de vie estimée de 5 ans</li>
+                        <li>Les performances diminuent par rapport à celles des autres utilisateurs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

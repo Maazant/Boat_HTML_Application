@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" id = "jacket_main_page">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="../styles/jacket.css" />
+        <script src = "../js/jacket.js" type = "text/javascript"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body id="jacket_body">
+        <div id ="jacket_block_page">
+            <header>
+                <div id = "jacket_banniere">
+                    <div class="jacket_element 1">
+                        <div id="jacket_time">
+                            <script>
+                                get_date();
+                            </script>
+                        </div>
+                    </div>
+                    <div class="jacket_element 2">
+                        <div>
+                            <button id = 'jacket_button_sos'>
+                                <img src="../img/jacket_call.png" alt="image call sos" id = "jacket_sos"  onclick = "get_sos_call()">
+                                <!-- <script>
+                                    get_sos_call();
+                                </script> -->
+                            </button>
+                        </div>
+                    </div>
+                    <div class="jacket_element 3">
+                        <div>
+                            <script>
+                                get_meteo("Brest");
+                            </script>
+                            <img src="" alt="image meteo" id ="jacket_meteo">
+                        </div>
+                    </div>
+                    <div class="jacket_element 4">
+                        <div>
+                            <img id = "jacket_temperature" src="../img/jacket_temperature.png" alt="image temperature">
+                            <p id = "jacket_temperature_text">
+                                ...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div id="jacket_menu_dynamique">
+                <ul id="jacket_menu-navigation-principale" class="menu">
+                    <img id = "jacket_boussole" src="../img/jacket_boussole.png" alt="image boussole">
+                    <div>
+                    </div>
+                    <div id = "jacket_position">
+                        Latitude : 48.4000000°
+                        Longitude : -4.4833300°
+                    </div>
+                    <div>
+                        <a href="../index.html"><img id = "jacket_logo" src="../img/logo_couleur.png" alt="image logo"> </a>
+                    </div>
+                </ul>
+              </div>
+              <section id = "jacket_section">
+                <article id = "jacket_article">
+                    <div id = "jacket_heatmap_title">
+                        Boat Heatmap Status
+                    </div>
+                    <div>
+                        <img id="jacket_heatmap" src="../img/jacket_heatmap.png" alt="image heatmap">
+                    </div>
+                    <div id = "jacket_slider">
+                        <div class="jacket_element2 1">
+                            0%
+                        </div>
+                        <div class="jacket_element2 2">
+                        </div>
+                        <div class="jacket_element2 3">
+                        </div>
+                        <div class="jacket_element2 4">
+                        </div>
+                        <div class = "jacket_element2 5">
+                            100%
+                        </div>
+                    </div>
+                    <div id = "jacket_filter">
+                        <div id = "jacket_filter_first_line">
+                            <div  class="jacket_filter_first_line 1">
+                            </div>
+                            <div  class="jacket_filter_first_line 2">
+                                Green
+                            </div>
+                            <div  class="jacket_filter_first_line 3">
+                            </div>
+                            <div  class="jacket_filter_first_line 4">
+                                Yellow
+                            </div>
+                        </div>
+                        <div id = "jacket_filter_second_line">
+                            <div  class="jacket_filter_second_line 1">
+                            </div>
+                            <div  class="jacket_filter_second_line 2">
+                                Orange
+                            </div>
+                            <div  class="jacket_filter_second_line 3">
+                            </div>
+                            <div  class="jacket_filter_second_line 4">
+                                Red
+                            </div>
+                        </div>
+                    </div>
+                  </article>
+              </section>
+              <section id="jacket_popup" style="display: none;">
+                <div id="jacket_call">
+                    <div class="jacket_call_element 1">
+                        Numéro
+                        <br>
+                        SOS 196
+                    </div>
+                    <div class="jacket_call_element 2">
+                        Message
+                    </div>
+                    <div class="jacket_call_element 3">
+                        <button id = 'jacket_button_save_mike'  onclick = "recording_a_message()">
+                            <img src="../img/jacket_mike.png" alt="jacket_mike" id = "jacket_mike">
+                        </button>
+                    </div>
+                    <div class="jacket_call_element 4">
+                        <input type="button" value="Stop recording" id="jacket_stop_recording"  onclick="stop_recording()"  />
+                    </div>
+                    <div class="jacket_call_element 5">
+                        <input type="button" value="Play" id="jacket_play_button"  onclick="playButton()"  />
+                    </div>
+                    <div class="jacket_call_element 6">
+                        <input type="button" value="Download" id="jacket_download_button"  onclick="downloadButton()"  />
+                    </div>
+                    <!-- <div id="save_message" style="display: none;">
+                        <figure>
+                            <audio id = "sound_message">
+                            </audio>
+                        </figure>
+                    </div> -->
+                    <div class="jacket_call_element 7">
+                        <input type="button" value="Send" id="jacket_send_sos"  onclick="send_sos()"  />
+                    </div>
+                </div>
+              </section>
+        </div>
+    </body>
+</html>

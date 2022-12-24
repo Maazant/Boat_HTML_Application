@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="styles/style_index.css">
+        <title>Boat Energy</title>
+    </head>
+    <body>
+        <div id="info-container">
+            <div id="logo">
+                <img src="icons/logo.ico" alt="logo" width="100"/>
+            </div>
+            <div id="titre">
+                <h1>Energie</h1>
+            </div>
+            <div id="four_items">
+                <div id="deux_premiers">
+                    <div id="item">
+                        <img src="img/temperature_icon.png" alt="temperature" height="39" width=40/>
+                        <p id="text_items">14°C</p>
+                    </div>
+                    <div id="item">
+                        <img src="img/weather_icon.png" alt="weather" height="39" width=40/>
+                        <p id="text_items">Nuageux  </p>
+                    </div>
+                </div>
+                <div id="les deux autres">
+                    <div id="item">
+                        <img src="img/geolocalisation_icon.png" alt="geolocalisation" height="39" width=40/>
+                        <p id="text_items">47.6510,-3.1723</p>
+                    </div>
+                    <div id="item">
+                        <img src="img/battery_icon.png" alt="battery" height="39" width=40/>
+                        <p id="text_items">237 W/h</p>
+                    </div>
+                </div>
+            </div>
+            <div id="buttons">
+                <a href="index.html"><img src="img/main_button.png" alt="home button" width="85"/></a>
+            </div>
+            <div id="buttons">
+                <a href="src/map.html"><img src="img/map_button.png" alt="map button" width="85"/></a>
+            </div>
+            <div id="buttons">
+                <a href="src/jacket.html"><img src="img/jacket_button.png" alt="jacket button" width="85"/></a>
+            </div>
+            <div id="buttons">
+                <a href="src/energy.html"><img src="img/energy_button.png" alt="energy button" width="85"/></a>
+            </div>
+            <div id="time_block">
+                <p id="time"></p>
+            </div>
+        </div>  
+
+        <!--------------FIN Pour le header-------------------------------->
+
+        <div class="align_boat_table">
+        <!------------------ Boat Area---------------------->
+        <div class = "boat_ground">
+            <div class = "circles">
+            <!-- Cercles primaires bateau -->
+            <div class="circle_primaires" id="VHF">
+                <a href="src/energy.html?VHF">
+                    <p>VHF</p>
+                </a>
+                <span class="tooltiptext">1.9W</span>
+            </div>
+            <div class="circle_primaires" id="eol">
+                <a href="src/energy.html?Eolienne">
+                    <p>Eolienne</p>
+                </a>
+                <span class="tooltiptext">7.1W</span>
+            </div>
+            <div class="circle_primaires" id="Pilote">
+                <a href="src/energy.html?Pilote_automatique">
+                    <p>Pilote automatique</p>
+                </a>
+                <span class="tooltiptext">15.8W</span>
+            </div>
+            <div class="same_col">
+                <div class="circle_primaires" id="Pan1">
+                    <a href="src/energy.html?Toit_babord">
+                        <p>Panneau solaire 1</p>
+                    </a>
+                    <span class="tooltiptext">54.3W</span>
+                </div>
+                <div class="circle_primaires" id="GPS">
+                    <a href="src/energy.html?GPS">
+                        <p>GPS</p>
+                    </a>
+                    <span class="tooltiptext">6.1W</span>
+                </div>
+            </div>
+            <div class="same_col">
+                <div class="circle_primaires" id="Pan2">
+                    <a href="src/energy.html?Toit_tribord">
+                        <p>Panneau solaire 2</p>
+                    </a>
+                    <span class="tooltiptext">30.9W</span>
+                </div>
+                <div class="circle_primaires" id="batt">
+                    <a href="src/energy.html?Charge">
+                        <p>Batterie</p>
+                    </a>
+                    <span class="tooltiptext">86%</span>
+                </div>
+            </div>
+            <div class="circle_primaires" id="Ordi">
+                <a href="src/energy.html?Ordinateur">
+                    <p>Ordinateur</p>
+                </a>
+                <span class="tooltiptext">7.4W</span>
+            </div>
+            <div class="same_col">
+                <div class="circle_primaires" id="CentrNav">
+                    <a href="src/energy.html?Centrale_de_navigation">
+                        <p>Centrale de Navigation</p>
+                    </a>
+                    <span class="tooltiptext">3.3W</span>
+                </div>
+                <div class="circle_primaires" id="Chauff">
+                    <a href="src/energy.html?Chauffage">
+                        <p>Chauffage</p>
+                    </a>
+                    <span class="tooltiptext">0.0W</span>
+                </div>
+            </div>
+            <div class="same_col">
+                <div class="circle_primaires" id="Pan3">
+                    <a href="src/energy.html?Poupe_babord">
+                        <p>Panneau solaire 3</p>
+                    </a>
+                    <span class="tooltiptext">20.4W</span>
+                </div>
+                <div class="circle_primaires" id="hydro">
+                    <a href="src/energy.html?Hydrogenerateur">
+                        <p>Hydro - générateur</p>
+                    </a>
+                    <span class="tooltiptext">6W</span>
+                </div>
+                
+            </div>
+            <div class="circle_primaires" id="Pan4">
+                <a href="src/energy.html?Poupe_tribord">
+                    <p>Panneau solaire 4</p>
+                </a>
+                <span class="tooltiptext">10.3W</span>
+            </div>
+            
+            <div class="circle_primaires" id="eau">
+                <a href="src/energy.html?BEC">
+                    <p>Eau chaude</p>
+                </a>
+                <span class="tooltiptext">31.3W</span>
+            </div>
+
+            
+            </div>
+            <!------------------ End Boat Area------------------------>
+        </div>
+
+        <div>
+                <label class="switch">
+                   <input type="checkbox" onclick="opendashboard()" id="open_table">
+                    <span class="open_fleche"></span>
+                </label>
+            </div>
+
+         <!--------------- Energy dashboard -------------------------->
+        <div id="dashboard">
+            
+                <div class="table_title">Batterie</div>
+                <table>
+                <tr>
+                    <td  class="equipment"><a class="dashboard_link" href="src/energy.html?Charge">Charge</a></td>
+                    <td>86 %</td>
+                </tr>
+                <tr>
+                    <td>Autonomie</td>
+                    <td>5h50min</td>
+                </tr>
+            </table>
+            <div class="table_title">Production</div>
+            <table>
+                <tr>
+                    <td class="equipment"><a class="dashboard_link" href="src/energy.html?Toit_babord">Panneau solaire 1: toit bâbord</a></td>
+                    <td class="power"> 54.3W</td>
+                </tr>
+                <tr>
+                    <td><a class="dashboard_link" href="src/energy.html?Toit_tribord">Panneau solaire 2: toit tribord</a></td>
+                    <td> 30.9W</td>
+                </tr>
+                <tr>
+                    <td><a class="dashboard_link" href="src/energy.html?Poupe_babord">Panneau solaire 3: poupe bâbord</a></td>
+                    <td> 20.4W</td>
+                </tr>
+                <tr>
+                    <td><a class="dashboard_link" href="src/energy.html?Poupe_tribord">Panneau solaire 4: poupe tribord</a></td>
+                    <td> 10.3W</td>
+                </tr>
+                <tr>
+                    <td><a class="dashboard_link" href="src/energy.html?Hydrogenerateur">Hydrogénérateur</a></td>
+                    <td> 6W</td>
+                </tr>
+                <tr>
+                    <td><a class="dashboard_link" href="src/energy.html?Eolienne">Eolienne</a></td>
+                    <td> 7.1W</td>
+                </tr>
+                </table>
+                <div class="table_title">Consommation</div>
+                <table>
+                <tr>
+                    <td class="equipment"><a class="dashboard_link" href="src/energy.html?BEC">Eau chaude</a></td>
+                    <td> 31.3W</td>
+                </tr>
+                <tr>
+                    <td><a class="dashboard_link" href="src/energy.html?Centrale_de_navigation">Centrale de navigation</a></td>
+                    <td> 3.3W</td>
+                </tr>
+                <tr>
+                    <td><a class="dashboard_link" href="src/energy.html?GPS">GPS</a></td>
+                    <td> 6.1W</td>
+                </tr>
+                <tr>
+                    <td><a class="dashboard_link" href="src/energy.html?Pilote_automatique">Pilote automatique</a></td>
+                    <td> 15.8W</td>
+                </tr>
+                <tr>
+                    <td><a class="dashboard_link" href="src/energy.html?VHF">VHF</a></td>
+                    <td> 1.9W</td>
+                </tr>
+                <tr>
+                    <td><a class="dashboard_link" href="src/energy.html?Ordinateur">Ordinateur</a></td>
+                    <td> 7.4W</td>
+                </tr>
+                <tr>
+                    <td><a class="dashboard_link" href="src/energy.html?Chauffage">Chauffage</a></td>
+                    <td> 0.0W</td>
+                </tr>
+
+            </table>
+        </div>
+        <!-----------------End energy  dashboard-------------------------->
+       </div> <!----- <div class="align_boat_table">---->
+    </body> 
+    <script src = "js/index.js"></script>
+</html>
